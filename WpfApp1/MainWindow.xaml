@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="รายได้" HorizontalAlignment="Left" Height="55" Margin="83,76,0,0" VerticalAlignment="Top" Width="165" FontSize="36"/>
+        <Label Content="รายจ่าย" HorizontalAlignment="Left" Height="72" Margin="83,136,0,0" VerticalAlignment="Top" Width="165" FontSize="36"/>
+        <Label Content="ราคาของที่อยากได้" HorizontalAlignment="Left" Height="67" Margin="83,208,0,0" VerticalAlignment="Top" Width="276" FontSize="36"/>
+        <Label Content="คุณต้องเก็บเงินทั้งหมด" HorizontalAlignment="Left" Height="56" Margin="226,298,0,0" VerticalAlignment="Top" Width="323" FontSize="36"/>
+        <TextBox x:Name="txt_income" HorizontalAlignment="Left" Height="41" Margin="265,90,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="24" TextChanged="txt_income_TextChanged"/>
+        <TextBox x:Name="txt_expenditure" HorizontalAlignment="Left" Height="41" Margin="265,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="24" TextChanged="txt_expenditure_TextChanged"/>
+        <TextBox x:Name="txt_cost" HorizontalAlignment="Left" Height="41" Margin="364,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" FontSize="24" TextChanged="txt_cost_TextChanged"/>
+        <Label Content="บาท/วัน" HorizontalAlignment="Left" Height="41" Margin="549,90,0,0" VerticalAlignment="Top" Width="146" FontSize="24"/>
+        <Label Content="บาท/วัน" HorizontalAlignment="Left" Height="41" Margin="554,162,0,0" VerticalAlignment="Top" Width="82" FontSize="24"/>
+        <Label Content="บาท" HorizontalAlignment="Left" Height="41" Margin="636,222,0,0" VerticalAlignment="Top" Width="85" FontSize="24"/>
+        <Label Content="    วัน" HorizontalAlignment="Left" Height="40" Margin="700,314,0,0" VerticalAlignment="Top" Width="93" FontSize="24"/>
+        <Button x:Name="calculate1" Content="คำนวณ" HorizontalAlignment="Left" Height="59" Margin="83,306,0,0" VerticalAlignment="Top" Width="138" FontSize="24" Click="calculate1_Click"/>
+        <Label x:Name="txt_error_show" Content="" HorizontalAlignment="Left" Height="52" Margin="298,369,0,-0.333" VerticalAlignment="Top" Width="485" FontSize="22" Foreground="#FFFF1111"/>
+        <Label x:Name="txt_day" Content="" HorizontalAlignment="Left" Height="50" Margin="575,314,0,0" VerticalAlignment="Top" Width="146" FontSize="24"/>
+    </Grid>
+</Window>
